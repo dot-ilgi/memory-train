@@ -1,9 +1,20 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#03050e">
 <title>기억 열차</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gowun+Batang&family=Gowun+Dodum&display=swap">
 <style>
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%}
+body{margin:0}
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);box-sizing:border-box}
+
 /* Layout: one-screen game — large pixel stage on top (full-bleed on phones), RPG-Maker window stack below. Single deep-navy night world by choice. */
 :root{
   --ink:#03050e;
@@ -125,6 +136,8 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;background:ra
 @keyframes rise{from{opacity:0;transform:translateY(14px)}}
 @media (prefers-reduced-motion:reduce){#next,.opt::before,.rise,.bar i{animation:none}#cover,#epi,#epiLine,#epiFrame,#epiTitle{transition:none}}
 </style>
+</head>
+<body>
 
 <div id="app">
   <div id="stage">
@@ -617,3 +630,6 @@ $('shareCard').addEventListener('click',async()=>{
 })();
 })();
 </script>
+
+</body>
+</html>
